@@ -1,0 +1,49 @@
+1./system/core/toolbox/cat.c （改了）
+2./libcore/NativeCode.mk     （改了）
+3 /libcode/luni/src/main/native/libcode_io_Posix.cpp（改了）
+4 /dalvik/vm/ReconfigureDvm.mk （改了）
+5./dalvik/vm/Native.cpp  （改了）
+6./dalvik/vm/Jni.cpp  （改了）
+7./frameworks/base/services/java/com/android/server/pm/PackageManageService.java （改了）
+8./frameworks/base/core/java/com/android/internal/content/NativeLibraryHelper.java （改了）
+9./frameworks/base/core/jni/Android.mk（改了）
+10/frameworks/base/core/jni/android_app_NativeActivity.cpp（改了）
+11./device/androVM/vbox86/init.androVM.sh
+12.//device/androVM/common_x86/libhoudini_hook/Android.mk
+13./device/androVM/common_x86/libhoudini_hook/libhoudini_hook.cpp
+14./device/androVM/common_x86/libhoudini_hook/libhoudini_hook.c
+
+
+
+
+
+15 把上面的11 步的初始化放在了 /system/core/rootdir/init.usb.rc 中了
+16.把libhoudini_hook 文件夹放在了、device/generic/common/目录下
+
+
+上面是搜索houdini   得到的 ，有时间搜搜下面的宏 
+
+
+
+注意搜这几个宏   ，INTEL_HOUDINI  , DWITH_HOUDINI  ,houdini_hook, WITH_HOUDINI， 还有 abi2  
+
+15./libcore/NativeCode.mk (INTEL_HOUDINI) （改了）
+16./dalvik/vm/ReconfigureDvm.mk (INTEL_HOUDINI) （改了）
+17./frameworks/base/core/jni/Android.mk (INTEL_HOUDINI) （改了）
+18 /device/androVM/vbox86/BoardConfig.mk (INTEL_HOUDINI) 
+
+
+19./libcore/NativeCode.mk (DWITH_HOUDINI) （改了）
+20./dalvik/vm/ReconfigureDvm.mk (DWITH_HOUDINI  ) （改了）
+21./frameworks/base/core/jni/Android.mk (DWITH_HOUDINI  ) （改了）
+
+下面是搜houdini_hook 
+22./system/core/toolbox/cat.c 
+23./libcore/NativeCode.mk 
+24./libcode/luni/src/main/native/libcode_io_Posix.cpp
+25./dalvik/vm/ReconfigureDvm.mk 
+26./dalvik/vm/Native.cpp 
+27.frameworks/base/core/jni/Android.mk
+28.//device/androVM/common_x86/libhoudini_hook/Android.mk
+29./device/androVM/common_x86/libhoudini_hook/libhoudini_hook.cpp
+
